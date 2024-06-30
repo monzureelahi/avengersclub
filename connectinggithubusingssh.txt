@@ -1,0 +1,9 @@
+#Run these from Linux Machine
+ssh-keygen
+cd /root/.ssh/
+ls
+eval "$(ssh-agent -s)"
+Copy Private Key: ssh-add ~/.ssh/id_rsa
+
+#Copy the key to GitHub
+cat ~/.ssh/id_rsa.pub
